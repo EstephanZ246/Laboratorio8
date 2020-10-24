@@ -1,11 +1,11 @@
 module ALU_tb;
-// Inputs
+
 reg[7:0] A;
 reg[7:0] B;
 reg[2:0] Op;
-// Outputs
+
 wire[7:0] R;
-// Instantiate the Unit Under Test (UUT)
+
 ALU a1( A,B,Op,R);
 
 
@@ -17,7 +17,7 @@ $display("A B Salida");
 $display("____________");
 $monitor(" %b    %b    %b   ", A ,B ,R);
 end
-// Apply inputs.
+
 initial begin
 A =8'b10101010;
 B =8'b00001111;
