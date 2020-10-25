@@ -1,11 +1,12 @@
 module testbench();
-
+// se delaran el tipo que pertenece a nuestras entradas y salidas
+// siendo "wires" cables y reg almacen los datos
 reg clk, reset, enable, load;
 reg [11:0] datos;
 wire [11:0]  salidas;
-
+// instancia de contador
 Contador c1(clk, enable, reset, load, datos, salidas);
-
+// se coloca título y forma a nuestro despligue de datosentrada
     initial begin
     #10 $display(" ");
     $display(" ");
@@ -14,7 +15,7 @@ Contador c1(clk, enable, reset, load, datos, salidas);
     $display("_______________________________");
     $monitor(" %b    %b    %b   %b    %b  ", clk, enable, load, reset, salidas);
     end
-
+// se inicia el clock
   always// clock
   #5 clk = ~clk;
   initial begin
@@ -95,7 +96,6 @@ Contador c1(clk, enable, reset, load, datos, salidas);
   #10 reset = 1;
   #10 reset = 0;
   #10 enable = 0;
-  #10 reset = 1;
   #10 enable = 0;
   #10 enable = 0;
   #10 enable = 0;

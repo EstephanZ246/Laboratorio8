@@ -1,3 +1,4 @@
+// se declaran las entradas y salidas
 module Contador (
 clk,
 enable,
@@ -6,7 +7,7 @@ load,
 datos,
 salidas
 );
-
+// se coloca si son entradas o salidas las variable que declaramos antes.
 input clk;
 input rst;
 input enable;
@@ -21,9 +22,11 @@ wire load;
 wire [11:0] datos;
 
 reg [11:0]   salidas;
+// se coloca un always para que siempre que estemos en un valor no 0 realice las acciones
 
 always @(posedge clk or posedge rst)
-
+// se colocan los diferentes casos que tenemos en nuetro contadorr/
+// siendo estas para contar, no contar, reiniciar contador, y precargar un valor
 begin: contadorr
 
 if (rst)begin
