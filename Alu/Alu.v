@@ -26,14 +26,15 @@ operacion que se desea.
 
 begin
 case(Op)
-0: Reg3 = Reg1 + Reg2; // Suma
-1: Reg3 = Reg1 - Reg2;// resta
-2: Reg3 =~Reg1;//NOT
-3: Reg3 =~(Reg1 & Reg2);//NAND
-4: Reg3 =~(Reg1 | Reg2);//NOR
-5: Reg3 = Reg1 & Reg2;//AND
-6: Reg3 = Reg1 | Reg2;//OR
-7: Reg3 = Reg1 ^ Reg2;//XOR
+3'b010: Reg3 = Reg1 + Reg2; // Suma
+3'b110: Reg3 = Reg1 - Reg2;// resta
+//3'b100: Reg3 =~Reg1;//NOT
+3'b100: Reg3 =(Reg1 & ~Reg2);// A and ~B
+3'b101: Reg3 =(Reg1 | ~Reg2);// A or ~B
+3'b000: Reg3 = Reg1 & Reg2;//AND
+3'b001: Reg3 = Reg1 | Reg2;//OR
+3'b111: if (Reg1 < Reg2) Reg3 =1;
+        else Reg3 = 0;
 endcase
 end
 endmodule

@@ -27,13 +27,13 @@ B =8'b00001111;
 
 // se prueban las diferentes operaciones que se implementaron en el código.
 Op =0;
-#10 Op =1;
-#10 Op =2;
-#10 Op =3;
-#10 Op =4;
-#10 Op =5;
-#10 Op =6;
-#10 Op =7;
+#10 Op =3'b010;
+#10 Op =3'b110;
+#10 Op =3'b100;
+#10 Op =3'b101;
+#10 Op =3'b000;
+#10 Op =3'b001;
+#10 Op =3'b111;
 $finish;
 end
 // se crea archivos de gtkwave y para ver los diagramas de timing

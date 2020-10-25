@@ -1,0 +1,18 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Oct 25 05:12:30 2020
+[*]
+[dumpfile] "/home/z9/Documents/Universidad/Labs circuitos digitales/Lab 8/Alu/Alu_tb.vcd"
+[dumpfile_mtime] "Sun Oct 25 05:08:16 2020"
+[dumpfile_size] 789
+[savefile] "/home/z9/Documents/Universidad/Labs circuitos digitales/Lab 8/Alu/Alu_tb.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-4.420738 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 212
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 149
+[pattern_trace] 1
+[pattern_trace] 0
